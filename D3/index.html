@@ -378,6 +378,8 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="card destination">
+            <img
+              src="https://images.pexels.com/photos/3757144/pexels-photo-3757144.jpeg"
               class="card-img-top"
               alt="Downtown-Madrid"
             />
@@ -495,6 +497,24 @@
           </blockquote>
         </div>
       </div> -->
+      </div>
+
+
+      <!-- Counting "travel" -->
+
+      <div class="container" id="contact">
+        <p class="text-center text-secondary">
+          <script>
+            function travelImgNbr() {
+              let travelImage = document.getElementsByClassName("destination")
+                .length;
+              document.write(
+                "There are " + travelImage + " travel images on this page."
+              );
+            }
+            console.log(travelImgNbr());
+          </script>
+        </p>
       </div>
  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
  <script
