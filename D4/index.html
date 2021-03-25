@@ -88,8 +88,29 @@
               </p>
             </div>
           </div>
+    <!-- Form -->
+    <div class="container mb-3" id="form">
+      <!-- name -->
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" />
+      <input
+        type="button"
+        value="Add to Main list"
+        id="addToMainList"
+        onclick="addToMainListF()"
+      />
+      <br />
+      <label for="name">Teams:</label>
+      <input
+        type="number"
+        name="TeamsNumber"
+        id="TeamsNumber"
+        value="1"
+        onchange="TeamsNumberF()"
+      />
+    </div>
 
-          
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
