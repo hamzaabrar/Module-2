@@ -145,6 +145,8 @@
     </footer>
     
     <script>
+      //The features are the following:
+      // - The user should be able to add a list of names, find a way to get the user input and fill a list with the new name.
         const addToMainListF = () => {
           name = document.getElementById("name").value;
           mainList = document.getElementById("mainList");
@@ -152,6 +154,25 @@
           li.innerHTML = `${name}`;
           mainList.appendChild(li);
         };
+
+      // - The user should be able to set the number of teams he wants, so that they will be generated. A team is just another list to be displayed.
+      PreviousTeamsNumber = document.getElementById("TeamsNumber").value;
+      const TeamsNumberF = () => {
+        CurrentTeamsNumber = document.getElementById("TeamsNumber").value;
+        teamsList = document.getElementById("teamsList");
+        if (CurrentTeamsNumber > PreviousTeamsNumber) {
+          teamsList.innerHTML += `<div class="col mb-3 mb-lg-0 px-1" id="team${CurrentTeamsNumber}">
+            <h2>Team ${CurrentTeamsNumber}</h2>
+            <ul>
+            </ul>
+          </div>`;
+        } else if (CurrentTeamsNumber < PreviousTeamsNumber) {
+          // remove the last child of teamsList
+        }
+      };
+
+
+      
   </script>
 
 
