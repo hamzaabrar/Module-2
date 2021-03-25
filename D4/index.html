@@ -143,6 +143,17 @@
     <footer class="container">
       <p>&copy; Company 2020-2021</p>
     </footer>
+    
+    <script>
+        const addToMainListF = () => {
+          name = document.getElementById("name").value;
+          mainList = document.getElementById("mainList");
+          li = document.createElement("li");
+          li.innerHTML = `${name}`;
+          mainList.appendChild(li);
+        };
+  </script>
+
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
