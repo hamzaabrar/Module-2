@@ -480,8 +480,18 @@
         /*JS Exercises*/
 
         /*EX11) Write a function to add a new link into the navba*/
+        function generateNavLink() {
+        let navLinks = document.getElementsByClassName("nav")[0];
+        let newLinks = document.createElement("a");
+        newLinks.classList.add("p-2", "text-muted");
+        newLinks.innerText = "New Nav Link";
+        navLinks.appendChild(newLinks);
+        }
 
         /*EX12) Write a function to change the color of the main title*/
+        let searchIcon = document.querySelector(
+        "header > div > :last-child :first-child"
+        );
 
         /*EX13) Write a function to change the background of the jumbotron*/
 
