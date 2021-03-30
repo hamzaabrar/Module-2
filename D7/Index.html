@@ -505,11 +505,17 @@
             let mainTitle = document.querySelector("h1");
             mainTitle.classList.remove("text-dark");
             mainTitle.classList.add("mainTitle");
-         }
+        }
         /*EX15) Write a function to change the column size for post headings*/
-
+        function columnSize() {
+            let postHeadingSize = document.querySelectorAll("h2");
+            postHeadingSize.style.columnWidth = "100px";
+        }
         /*EX16) Write a function to remove the "Search" magnifying glass icon*/
-
+        function removeElsewhereLinks() {
+            let elseLinks = document.querySelectorAll(".list-unstyled")[1];
+            elseLinks.remove();
+        }
         /*EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post*/
 
         /*EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)*/
