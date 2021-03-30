@@ -481,22 +481,31 @@
 
         /*EX11) Write a function to add a new link into the navba*/
         function generateNavLink() {
-        let navLinks = document.getElementsByClassName("nav")[0];
-        let newLinks = document.createElement("a");
-        newLinks.classList.add("p-2", "text-muted");
-        newLinks.innerText = "New Nav Link";
-        navLinks.appendChild(newLinks);
+            let navLinks = document.getElementsByClassName("nav")[0];
+            let newLinks = document.createElement("a");
+            newLinks.classList.add("p-2", "text-muted");
+            newLinks.innerText = "New Nav Link";
+            navLinks.appendChild(newLinks);
         }
 
         /*EX12) Write a function to change the color of the main title*/
-        let searchIcon = document.querySelector(
-        "header > div > :last-child :first-child"
+            let searchIcon = document.querySelector(
+                "header > div > :last-child :first-child"
         );
 
         /*EX13) Write a function to change the background of the jumbotron*/
+        function changeJumbotronColor() {
+            let jumbotron = document.querySelector(".jumbotron");
+            jumbotron.classList.remove("bg-dark");
+            jumbotron.classList.add("jumbotronBg");
+        }
 
         /*EX14) Write a function to remove all the links under "Elsewhere"*/
-
+        function changeMainTitleColor() {
+            let mainTitle = document.querySelector("h1");
+            mainTitle.classList.remove("text-dark");
+            mainTitle.classList.add("mainTitle");
+         }
         /*EX15) Write a function to change the column size for post headings*/
 
         /*EX16) Write a function to remove the "Search" magnifying glass icon*/
